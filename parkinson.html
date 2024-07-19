@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Prediction Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(238,174,202);
+         background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            color: #571264;
+        }
+        input[type="text"], input[type="radio"] {
+            width: 150px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            color: black;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h4 {
+            color: blue;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parkinson's Prediction Portal</h1>
+    <form action="{{url_for("predict")}}" method="POST">
+              <label>Name:</label>
+                  <input type="text"name="Name"size="15"/><br><br>
+                  
+                  <label>   
+                      Gender :  
+                      </label><br>  
+                      <input type="radio" name="gender" value="male"> Male <br>  
+                      <input type="radio" name="gender" value="female"> Female <br>  
+                      <input type="radio" name="gender" value="other"> Other  
+                      <br>  
+                      <br>  
+              
+                   
+                   <label>MDVP:Fo(Hz)</label>
+                   <input type="text"name="MDVP:Fo(Hz)" size="5 " required="required" &nbsp;&nbsp;/>
+                   <label>MDVP:Fhi(Hz)</label>
+                   <input type="text"name="MDVP:Fhi(Hz)" size="5" required="required" />
+                   <label>MDVP:Flo(Hz)</label>
+                   <input type="text" name="MDVP:Flo(Hz)" size="5" required="required" />
+                   <label>MDVP:Jitter(%)</label>
+                   <input type="text" name="MDVP:Jitter(%)" size="5" required="required" />
+                   <label>MDVP:Jitter(Abs)</label>
+                   <input type="text" name="MDVP:Jitter(Abs)" size="5" required="required" />
+                   <label>MDVP:RAP</label>
+                   <input type="text" name="MDVP:RAP" size="5" required="required" />
+                   <label>MDVP:PPQ</label>
+                   <input type="text" name="MDVP:PPQ" size="5" required="required" />
+                   <label>Jitter:DDP</label>
+                   <input type="text" name="Jitter:DDP" size="5" required="required" />
+                   <label>MDVP:Shimmer</label>
+                   <input type="text" name="MDVP:Shimmer" size="5"  required="required" />
+                   <label>MDVP:Shimmer(dB)</label>
+                   <input type="text" name="MDVP:Shimmer(dB)" size="5" required="required" />
+                   <label>Shimmer:APQ3</label>
+                   <input type="text" name="Shimmer:APQ3" size="5" required="required" />
+                   <label>Shimmer:APQ5</label>
+                   <input type="text" name="Shimmer:APQ5" size="5" required="required" />
+                   <label>MDVP:APQ</label>
+                   <input type="text" name="MDVP:APQ" size="5" required="required" />
+                   <label>Shimmer:DDA</label>
+                   <input type="text" name="Shimmer:DDA" size="5" required="required" />
+                   <label>NHR</label>
+                   <input type="text" name="NHR" size="5" required="required" /><br>
+                   <label>HNR</label>
+                   <input type="text" name="HNR" size="5" required="required" />
+                   <label>RPDE</label>
+                   <input type="text" name="RPDE" size="5" required="required" />
+                   <label>DFA</label>
+                   <input type="text" name="DFA" size="5" required="required" />
+                   <label>spread1</label>
+                   <input type="text" name="spread1" size="5" required="required" />
+                   <label>spread2</label>
+                   <input type="text" name="spread2" size="5" required="required" />
+                   <label>D2</label>
+                   <input type="text" name="D2" size="5" required="required" />
+                   <label>PPE</label>
+                   <input type="text" name="PPE" size="5" required="required" /><br><br>
+                <button type="submit" >predict </button>
+       
+    </form>
+    <h4>{{basic_text}}</h4>
+    <h4>{{prediction_text}}</h4>
+</body>
+</html>

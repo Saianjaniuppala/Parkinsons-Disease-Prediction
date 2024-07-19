@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Parkinson's Disease Information</title>
+     <style>
+    /* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: #003366;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    padding-top:20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    
+    color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section {
+  width: 100%;
+  height: 100%;
+}
+
+iframe{
+  width: 700px;
+  height: 500px;
+  margin-top: 12.875%;
+  margin-left:80px;
+ 
+}
+.section {
+   
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .im{
+  display:flex;
+  }
+
+  .image-box {
+    flex: 1;
+    margin-right: 20px;
+width=900px;
+ height=600px;
+  }
+
+  .para-box {
+    flex: 1;
+    display: flex; /* Display paragraphs side by side */
+    flex-direction: column; /* Arrange paragraphs vertically */
+    text-align: justify;
+    text-justify: inter-word;
+    
+  }
+
+  .para-box p {
+    margin: 0 0 10px;
+  }
+
+  .para-box::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navbar-height: 59px;
+}
+ 
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.logo img {
+    width: 33%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+ 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+ 
+.nav-list {
+    width: 70%;
+    display: flex;
+}
+ 
+.nav-list li {
+    list-style: none;
+    padding: 2px 6px;
+}
+ 
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+ 
+.nav-list li a:hover {
+    color: grey;
+}
+ 
+.rightNav {
+    width: 50;
+    text-align: right;
+}
+ 
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn-sm{
+  background-color:white;
+background-color:#b6d0f6;
+}
+ 
+.background {
+    background-color:#10376f;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+ 
+.box-main {
+    display: flex;
+     background-color: #003366;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+ 
+.text-big {
+    font-family: "Piazzolla", serif;
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+}
+.center {
+
+    text-align: center;
+}
+ 
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+ 
+.text-small,
+.center {
+    color: #333;
+}
+ 
+.nav-list li a:hover {
+    color: #555;
+}
+ 
+ 
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.btn-primary {
+    background-color: #3498db;
+}
+ 
+.btn:hover {
+    background-color: #2980b9;
+}
+ 
+#service {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+ 
+ 
+.h-primary {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+ 
+.contact-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+ 
+.contact-card img {
+    max-width: 80px;
+}
+ 
+.contact-card h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+ 
+.card-text {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #555;
+}
+ 
+.phone-number {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+ 
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+  *     box-sizing: border-box
+}
+
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+img {
+  width: 100%;
+  text-align: center;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+padding-left: 75px;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Parkinson's Disease Prediction</h1>
+    </header>
+  <!--  <nav> -->
+     <!--    <ul> -->
+     <!--        <li><a href="#">Home</a></li> -->
+     <!--        <li><a href="#">About Parkinson's</a></li> -->
+     <!--        <li><a href="#">Symptoms</a></li> -->
+     <!--        <li><a href="#">Treatment</a></li> -->
+     <!--        <li><a href="#">Resources</a></li> -->
+     <!--    </ul> -->
+   <!--  </nav> -->
+    <main>
+        <section class="intro">
+            <h2>Welcome to our Parkinson's Disease Prediction Website</h2>
+            <p>Learn about Parkinson's disease, its symptoms, treatments, and available resources.</p>
+       
+<section class='left section'>
+<div class="image-slideshow">
+
+      <div class="image fade">
+      <img src="https://thumbs.dreamstime.com/z/parkinson-s-disease-elderly-people-diseases-disorders-oth-other-health-problems-medical-infographic-set-icons-other-88706119.jpg" width="900" height="400" class="center">
+
+      </div>
+        
+      <div class="image fade">
+      <img src="https://www.homeopathicdoctor.co.in/wp-content/uploads/2022/02/134673-parkinsons-disease.webp" alt="Parkinson's Disease Brain Image" width="900" height="400" class="center">
+      </div>
+      <div class="image fade">
+      <img src="https://www.verywellhealth.com/thmb/Aaqo8oM3QDHSNHCt_DlKCNeWoUk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/zhansen-5200700_Finaledit2-3e7eb00f1bdb4806adb3f67ca4404894.jpg" width="900" height="400" class="center">
+      </div>
+      
+      </div>
+    </div>
+    <script>
+let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+
+</script>
+</section>
+
+<marquee class="marq" direction="right" loop="">
+           <a href="https://en.m.wikipedia.org/wiki/Parkinson%27s_disease">Read more</a>
+        </marquee>
+
+<main class='main'>
+  <section class='right section' style=" padding-right: 100px;">
+  
+    <iframe width="360" height="200" src="https://www.youtube.com/embed/u_tozEV7f4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen "></iframe>
+
+  </section>
+</main>
+<br>
+<br>
+
+<div class="im">
+  <div class="image-box">
+    <img src="https://i.giphy.com/media/3o6ZtqkyedkNCC6wjS/giphy-downsized-medium.gif" alt="funny GIF" width="500" height="300">
+  </div>
+  
+  <div class="para-box">
+    <p><b>Parkinson's disease is a neurodegenerative disorder that affects the central nervous system. It is characterized by the progressive loss of dopamine-producing brain cells, leading to various motor and non-motor symptoms.Parkinson's disease is a progressive neurological disorder that primarily affects movement control. It's characterized by symptoms like tremors, muscle stiffness, slow movements, and impaired balance. These symptoms are caused by a decrease in dopamine-producing cells in the brain. While there's no cure, treatments such as medication, physical therapy, and lifestyle changes can help manage the symptoms and improve the patient's quality of life.</b></p>
+  </div>
+</div>
+        
+        
+</body>
+    </main>
+<body >
+        
+<section class='section'>
+        <section class="background firstsection" style="background-color: #003366;">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big">Contact Us</p>
+                    <p class="text-small">
+                        We're here to assist you. Reach out using one of these options.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <h1 class="h-primary center" style="margin-top:30px;">
+                Best Ways to Reach Us
+            </h1>
+            <div id="service">
+                <div class="contact-card">
+                    <img src=
+ "https://cdn.iconscout.com/icon/free/png-256/free-reading-book-2130818-1794963.png"
+                       alt="form_image">
+                    <h2>Testing Form</h2>
+                    <p class="card-text">
+                       Enter the appropriate values after MDVP test.
+                    </p>
+                    <a href="{{ url_for('parkinson') }}" class="btn btn-primary">Test Form</a>
+                </div>
+                <div class="contact-card">
+                    <img src=
+  "https://tse3.mm.bing.net/th?id=OIP.48fC0MnDnBVSuAXnHZNv4wHaHa&pid=Api&P=0&h=180"
+                         alt="email_image">
+                    <h2>Gmail</h2>
+                    <p class="card-text">
+                        For quries send us  an email . Your query will be responded within 24 hours.
+                    </p>
+                    <a href=mailto:"mahinemroz@gmail.com" class="btn btn-primary">
+                      Email Us</a>
+                </div>
+                <div class="contact-card">
+                    <img src=
+   "https://cdn.pixabay.com/photo/2013/07/12/12/58/dial-phone-146639_1280.png"
+                    alt="phone_image">
+                    <h2>Toll-Free Number</h2>
+                    <p class="card-text">
+                        Reach our support team via our 24/7 toll-free number.
+                    </p>
+                    <p class="phone-number">Call: +91 6303747349, +91 8143187941</p>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <p>&copy; 2023 Parkinson's Disease Prediction</p>
+
+    </footer>
+    
+</body>
+</html>

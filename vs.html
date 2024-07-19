@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Parkinson's Disease Information</title>
+     <style>
+    /* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8FF;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: #003366;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #003366;
+    color: white;
+}
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Parkinson's Disease Prediction</h1>
+    </header>
+  <!--  <nav> -->
+     <!--    <ul> -->
+     <!--        <li><a href="#">Home</a></li> -->
+     <!--        <li><a href="#">About Parkinson's</a></li> -->
+     <!--        <li><a href="#">Symptoms</a></li> -->
+     <!--        <li><a href="#">Treatment</a></li> -->
+     <!--        <li><a href="#">Resources</a></li> -->
+     <!--    </ul> -->
+   <!--  </nav> -->
+    <main>
+        <section class="intro">
+            <h2>Welcome to our Parkinson's Disease Prediction Website</h2><br>
+            <p>Learn about Parkinson's disease, its symptoms, treatments, and available resources.</p><br>
+                <div class="image-box">
+                    <img src="https://www.homeopathicdoctor.co.in/wp-content/uploads/2022/02/134673-parkinsons-disease.webp" alt="Parkinson's Disease Brain Image" width="500" height="300"><br><br>
+</body>
+                   <br> <p>Parkinson's disease is a neurodegenerative disorder that affects the central nervous system. 
+It is characterized by the progressive loss of dopamine-producing brain cells, leading to various motor and non-motor symptoms.
+ The main problem statement for Parkinson's disease can be framed as follows:
+ develop effective strategies for early detection, accurate diagnosis, and personalized treatment of Parkinson's disease to improve the quality of life for patients, slow down disease progression, and eventually find a cure for this debilitating neurological condition.
+                   
+                </div>
+             <br>
+                <p><b><a href="{{ url_for('parkinson') }}">Next</b></a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Parkinson's Disease Prediction</p>
+    </footer>
+    
+</body>
+</html>

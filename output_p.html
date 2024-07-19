@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Prediction Portal</title>
+    <style>
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        h1 {
+            text-align: center;
+            color: #DC143C;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+        .image-box {
+            width: 320px; /* Fixed width for the box */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin: 5px;
+            overflow: hidden; /* Clip content that exceeds the box */
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Maintain aspect ratio and fill box */
+        }
+        .text-container {
+            padding: 10px;
+        }
+        p {
+            margin: 5px 0; /* Adjust vertical spacing for the text */
+            <!-- overflow: hidden;-->
+            white-space: nowrap;
+            <!-- text-overflow: ellipsis; -->
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 960px) {
+            .image-box {
+                width: calc(50% - 10px); /* Adjust margin to avoid overlap */
+            }
+        }
+        /* Media query for smaller screens */
+        @media (max-width: 640px) {
+            .image-box {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>{{prediction_text}}</h1>
+    <div class="image-container">
+        <div class="image-box">
+            <img src="https://www.pacificneuroscienceinstitute.org/wp-content/uploads/Mind_Diet_Food_Options.jpg" alt="Parkinson's Disease Brain Image">
+            <div class="text-container">
+                <p><b>Dietery requirements play a major role in parkinson's disease. Above mentioned diet can prevent you from further development of disease.</b></p>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://www.verywellhealth.com/thmb/Uqr4CJKgm4GbVWfDo2IaUL9Oe-Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VWH-ZoeHansen-ExercisesforParkinsons-Standard-9011ecdbcd034f72b7f88693a3f59b66.jpg" alt="Parkinson's Disease Brain Image">
+            <div class="text-container">
+                <p><b>Exercising helps parkinsons people to stay active ,this helps to release a healthy amount of dopamine</b></p>
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://www.researchgate.net/publication/346580687/figure/fig1/AS:990687503843328@1613209715334/Fig-1-Motor-and-Non-motor-symptoms-in-Parkinsons-disease-A-higher-resolution.jpg">
+            <div class="text-container">
+                <p><b>If the symptoms mentioned above are considered to be severe , PLEASE CONSULT A NEUROLOGIST!!</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
